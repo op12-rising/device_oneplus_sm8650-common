@@ -49,15 +49,23 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl \
     android.hardware.soundtrigger@2.3-impl \
     audio.bluetooth.default \
+    audio.primary.pineapple \
     audio.usb.default \
     audio.r_submix.default \
     libagmmixer \
+    libagm \
+    libats \
     libagm_compress_plugin \
     libagm_mixer_plugin \
     libagm_pcm_plugin \
     libaudiochargerlistener \
     libbatterylistener \
+    lib_bt_aptx \
+    lib_bt_ble \
+    lib_bt_bundle \
     libfmpal \
+    libhotword_intf \
+    libcustomva_intf \
     libhfp_pal \
     libqcompostprocbundle \
     libqcomvisualizer \

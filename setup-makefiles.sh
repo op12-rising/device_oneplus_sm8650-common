@@ -74,6 +74,12 @@ function lib_to_package_fixup_vendor_variants() {
             ;;
         libagmclient | \
             libpalclient | \
+            libar-pal | \
+            libar-acdb | \
+            libar-gsl | \
+            liblx-osal | \
+            libats | \
+            libagm | \
             libwpa_client) ;;
         *)
             return 1
