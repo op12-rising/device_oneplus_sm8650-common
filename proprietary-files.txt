@@ -3474,9 +3474,6 @@ odm/bin/hw/vendor-oplus-hardware-touch-V2-service
 odm/etc/init/init.touchDaemon.rc
 odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc
 odm/etc/vintf/manifest/manifest_touch_aidl.xml
-odm/bin/hw/vendor.oplus.hardware.urcc-service
-odm/etc/init/vendor.oplus.hardware.urcc-service.rc
-odm/etc/vintf/manifest/vendor.oplus.hardware.urcc-service.xml
 odm/lib64/liboplus-uah-client.so
 odm/lib64/liburcccore.so
 odm/lib64/vendor.oplus.hardware.urcc-V1-ndk.so
