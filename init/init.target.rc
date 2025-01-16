@@ -253,8 +253,8 @@ on property:vendor.post_boot.parsed=1
     write /dev/cpuctl/camera-daemon/cpu.uclamp.latency_sensitive 1
 
     # Enable ZRAM on boot_complete
-    insmod /system/lib/modules/6.1.118-android14-11-o-gd44351ca26e5-dirty/kernel/mm/zsmalloc.ko
-    insmod /system/lib/modules/6.1.118-android14-11-o-gd44351ca26e5-dirty/kernel/drivers/block/zram/zram.ko
+    insmod /system/lib/modules/6.1.118-android14-11-o-g40b58d2294d4/kernel/mm/zsmalloc.ko
+    insmod /system/lib/modules/6.1.118-android14-11-o-g40b58d2294d4/kernel/drivers/block/zram/zram.ko
     write /sys/block/zram0/comp_algorithm lz4
     write /proc/sys/vm/page-cluster 0
     swapon_all /vendor/etc/fstab.${ro.boot.hardware}
