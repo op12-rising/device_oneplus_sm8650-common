@@ -303,6 +303,7 @@ persist.vendor.radio.procedure_bytes=SKIP
 persist.vendor.radio.rat_on=combine
 persist.vendor.radio.sib16_support=1
 ro.telephony.default_network=33,33
+ro.vendor.config.oplus.uniform_single_sim=2
 
 # RCS
 persist.vendor.rcs.singlereg.feature=1
