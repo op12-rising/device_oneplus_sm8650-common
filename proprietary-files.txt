@@ -3514,6 +3514,9 @@ odm/firmware/ufs/SAMSUNG-KLUGGARHHD-B0G1.bin
 odm/firmware/ufs/SKhynix-HN8T274EJKX130.bin
 odm/firmware/ufs/move_target_ufs_fw_to_oplusreserve1.sh
 
+# Vibrator
+odm/lib64/libaacvibrator.so:vendor/lib64/libaacvibrator.so
+
 # Video
 vendor/lib64/libstreamparser.so
 vendor/lib64/libvideotxr.so
