@@ -3,4 +3,8 @@
     "repository": "hardware_oplus",
     "target_path": "hardware/oplus"
   },
+  {
+    "repository": "packages_apps_TouchGestures",
+    "target_path": "packages/apps/TouchGestures"
+  }
 ]
