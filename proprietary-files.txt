@@ -1391,7 +1391,7 @@ odm/lib64/camera/awb_parameter_qtech_lyt808_main.bin:odm/etc/camera/awb_paramete
 odm/lib64/camera/awb_parameter_qtech_ov32c.bin:odm/etc/camera/awb_parameter_qtech_ov32c.bin;SYMLINK=odm/lib64/camera/awb_parameter_qtech_ov32c.bin
 odm/lib64/camera/awb_parameter_qtech_ov32c_sub.bin:odm/etc/camera/awb_parameter_qtech_ov32c_sub.bin;SYMLINK=odm/lib64/camera/awb_parameter_qtech_ov32c_sub.bin
 odm/lib64/camera/awb_parameter_sunny_imx888_main.bin:odm/etc/camera/awb_parameter_sunny_imx888_main.bin;SYMLINK=odm/lib64/camera/awb_parameter_sunny_imx888_main.bin
-odm/lib64/camera/awb_parameter_sunny_ov64b40_tele.bin:odm/etc/camera/awb_parameter_sunny_ov64b40_tele.bin;SYMLINK=odm/lib64/camera/awb_parameter_sunny_ov64b40_tele.bin
+odm/lib64/camera/awb_parameter_sunny_ov64b40_tele.bin:odm/etc/camera/awb_parameter_sunny_ov64b40_tele.bin;SYMLINK=odm/lib64/camera/awb_parameter_sunny_ov64b40_tele.bin|80b5c9d53ec0d46517b2aa30d62de58eeb985ea3
 odm/lib64/camera/com.qti.sensor.imx581.so
 odm/lib64/camera/com.qti.sensor.imx615.so
 odm/lib64/camera/com.qti.sensor.imx888.so
