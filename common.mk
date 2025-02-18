@@ -535,6 +535,9 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils_prd.xml \
     telephony-ext
 
+PRODUCT_PACKAGES += \
+    qcrilNrDb_vendor
+
 ifneq ($(TARGET_BUILD_GAPPS),true)
 PRODUCT_PACKAGES += \
     OpenEUICC
