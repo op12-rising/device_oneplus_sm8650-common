@@ -217,7 +217,6 @@ service fan_control_turn_off /vendor/bin/fan_service 0
     oneshot
 
 on property:vendor.post_boot.parsed=1
-
     # Uclamp tunings
     setprop kernel.sched_util_clamp_min_rt_default 0
     write /proc/sys/kernel/sched_util_clamp_min_rt_default 0
