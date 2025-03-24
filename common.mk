@@ -395,6 +395,13 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
 
+# OpenDelta
+ifeq ($(TARGET_BUILD_GAPPS),true)
+    PRODUCT_PACKAGES += op8650OpenDeltaOverlay
+else
+    PRODUCT_PACKAGES += op8650OpenDeltaOverlayVanilla
+endif
+
 # OSENSE
 PRODUCT_PACKAGES += \
     vendor.oplus.hardware.osense.client-service
