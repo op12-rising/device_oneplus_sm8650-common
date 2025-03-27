@@ -56,6 +56,7 @@ persist.vendor.data.mode=concurrent
 
 # Radio
 persist.radio.hvolte.enable=1
+persist.vendor.radio.poweron_opt=1
 ril.subscription.types=NV,RUIM
 ro.telephony.default_network=33,33
 ro.telephony.sim_slots.count=2
