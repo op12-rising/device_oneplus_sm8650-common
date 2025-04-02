@@ -2712,7 +2712,6 @@ vendor/lib64/libqtiidentitycredential.so
 
 # Kernel
 vendor/bin/init.kernel.post_boot-memory.sh
-vendor/bin/init.kernel.post_boot-pineapple.sh
 vendor/bin/init.kernel.post_boot-pineapple_2_3_1_1.sh
 vendor/bin/init.kernel.post_boot-pineapple_2_3_2_0.sh
 vendor/bin/init.kernel.post_boot-pineapple_default_2_3_2_1.sh
