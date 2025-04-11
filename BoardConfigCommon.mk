@@ -70,7 +70,7 @@ BOARD_USES_QCOM_MERGE_DTBS_SCRIPT := true
 TARGET_NEEDS_DTBOIMAGE := true
 
 # Camera
-TARGET_CAMERA_PACKAGE_NAME := com.oplus.packageName
+TARGET_CAMERA_PACKAGE_NAME := com.oplus.camera
 
 # Properties
 TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
