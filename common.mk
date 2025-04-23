@@ -142,8 +142,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.capabilityconfigstore@1.0.vendor
 
 # Context Hub
-PRODUCT_PACKAGES += \
-    android.hardware.contexthub-V2-ndk.vendor
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.context_hub.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.context_hub.xml
 
 # Dalvik
 PRODUCT_VENDOR_PROPERTIES += \
