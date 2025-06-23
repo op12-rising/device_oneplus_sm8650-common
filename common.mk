@@ -528,14 +528,6 @@ PRODUCT_COPY_FILES += \
 $(call soong_config_set,oplus_sensors,uses_tap_sensor,true)
 $(call soong_config_set,oplus_sensors,uses_double_tap_sensor,true)
 
-# Shims
-PRODUCT_PACKAGES += \
-    libshim_ui \
-    libcodec2_shim \
-    libinput_shim \
-    libgui_shim \
-    libhidlbase_shim
-
 # Shipping API
 BOARD_SHIPPING_API_LEVEL := 34
 PRODUCT_SHIPPING_API_LEVEL := $(BOARD_SHIPPING_API_LEVEL)
