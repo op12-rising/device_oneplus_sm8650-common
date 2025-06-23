@@ -163,7 +163,12 @@ function blob_fixup() {
             ;;
         vendor/lib64/vendor.libdpmframework.so)
             [ "$2" = "" ] && return 0
+            grep -q "libbinder_shim.so" "${2}" || "${PATCHELF}" --add-needed "libbinder_shim.so" "${2}"
             grep -q "libhidlbase_shim.so" "${2}" || "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
+        vendor/bin/qcc-vendor|vendor/bin/qms|vendor/bin/xtra-daemon|vendor/lib64/libqms_client.so|vendor/lib64/libqcc_sdk.so|vendor/lib64/libcne.so)
+            [ "$2" = "" ] && return 0
+            grep -q "libbinder_shim.so" "${2}" || "${PATCHELF}" --add-needed "libbinder_shim.so" "${2}"
             ;;
         vendor/lib64/libstagefright_soft_ddpdec.so|vendor/lib64/libdlbdsservice.so|vendor/lib64/libstagefright_soft_ac4dec.so|vendor/lib64/libstagefrightdolby.so)
             [ "$2" = "" ] && return 0
