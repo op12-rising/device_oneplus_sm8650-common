@@ -129,6 +129,7 @@ function blob_fixup() {
         system_ext/lib64/libwfdservice.so)
             [ "$2" = "" ] && return 0
             sed -i "s/android.media.audio.common.types-V2-cpp.so/android.media.audio.common.types-V4-cpp.so/" "${2}"
+            grep -q "libaudioclient_shim.so" "${2}" || "${PATCHELF}" --add-needed "libaudioclient_shim.so" "${2}"
             ;;
         vendor/bin/system_dlkm_modprobe.sh)
             [ "$2" = "" ] && return 0
