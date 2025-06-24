@@ -5,7 +5,7 @@ tunnel.audio.encode=true
 use.voice.path.for.pcm.voip=true
 
 # Brightness
-persist.sys.brightness.low.gamma=true
+sys.brightness.disable_gamma_conversion=true
 
 # Dex2oat
 dalvik.vm.dex2oat64.enabled=true
