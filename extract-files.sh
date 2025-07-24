@@ -147,7 +147,6 @@ function blob_fixup() {
         vendor/etc/media_codecs_pineapple.xml|vendor/etc/media_codecs_pineapple_vendor.xml)
             [ "$2" = "" ] && return 0
             sed -Ei "/media_codecs_(google_audio|google_c2|google_telephony|google_video|vendor_audio)/d" "${2}"
-            sed -i "s/media_codecs_vendor_audio/media_codecs_dolby_audio/" "${2}"
             ;;
         vendor/lib64/libqcodec2_core.so)
             [ "$2" = "" ] && return 0
@@ -165,10 +164,6 @@ function blob_fixup() {
         vendor/bin/qcc-vendor|vendor/bin/qms|vendor/bin/xtra-daemon|vendor/lib64/libqms_client.so|vendor/lib64/libqcc_sdk.so|vendor/lib64/libcne.so)
             [ "$2" = "" ] && return 0
             grep -q "libbinder_shim.so" "${2}" || "${PATCHELF}" --add-needed "libbinder_shim.so" "${2}"
-            ;;
-        vendor/lib64/libstagefright_soft_ddpdec.so|vendor/lib64/libdlbdsservice.so|vendor/lib64/libstagefright_soft_ac4dec.so|vendor/lib64/libstagefrightdolby.so)
-            [ "$2" = "" ] && return 0
-            "${PATCHELF_0_17_2}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
             ;;
         system_ext/lib64/libwfdmmsrc_system.so)
             [ "$2" = "" ] && return 0

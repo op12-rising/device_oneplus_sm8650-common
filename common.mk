@@ -375,18 +375,8 @@ PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor \
     libcodec2_hidl@1.2.vendor \
-    libcodec2_soft_common.vendor \
     libcodec2_vndk.vendor \
-    libsfplugin_ccodec_utils.vendor \
-    libstagefright_foundation-v33 \
     libpalclient
-
-# Media (Dolby)
-PRODUCT_PACKAGES += \
-    OplusDolby
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml
 
 # Memtrack
 PRODUCT_PACKAGES += \
