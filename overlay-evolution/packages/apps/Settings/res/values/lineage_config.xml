@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2025 YAAP
+     Copyright (C) 2022 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
+    <!-- Show battery cycle count -->
+    <bool name="config_show_battery_cycle_count" translatable="false">true</bool>
 
     <!-- Show haptic styles -->
-    <bool name="config_supportHapticProfiles">true</bool>
+    <bool name="config_supportHapticProfiles" translatable="false">true</bool>
 
     <!-- Show high touch polling rate -->
     <bool name="config_supportHighTouchRate">true</bool>
-
-    <!-- Hide VRR toggle -->
-    <bool name="config_disableVrrSetting">true</bool>
-
 </resources>
