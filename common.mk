@@ -423,7 +423,8 @@ PRODUCT_PACKAGES += \
     OPlusFrameworksResCommon \
     OPlusSettingsResCommon \
     OPlusSystemUIResCommon \
-    WifiResTarget
+    WifiResTarget \
+    OPlusSystemUIOverlay
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
