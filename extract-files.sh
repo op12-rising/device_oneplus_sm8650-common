@@ -112,20 +112,6 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             sed -i "s/\/my_product/\/product/" "${2}"
             ;;
-        system_ext/bin/wfdservice64)
-            [ "$2" = "" ] && return 0
-            grep -q "libwfdservice_shim.so" "${2}" || "${PATCHELF}" --add-needed "libwfdservice_shim.so" "${2}"
-            ;;
-        system_ext/lib64/libwfdnative.so)
-            [ "$2" = "" ] && return 0
-            sed -i "s/android.hidl.base@1.0.so/libhidlbase.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${2}"
-            grep -q libinput_shim.so "$2" || "$PATCHELF" --add-needed libinput_shim.so "$2"
-            ;;
-        system_ext/lib64/libwfdservice.so)
-            [ "$2" = "" ] && return 0
-            sed -i "s/android.media.audio.common.types-V2-cpp.so/android.media.audio.common.types-V4-cpp.so/" "${2}"
-            grep -q "libaudioclient_shim.so" "${2}" || "${PATCHELF}" --add-needed "libaudioclient_shim.so" "${2}"
-            ;;
         vendor/bin/system_dlkm_modprobe.sh)
             [ "$2" = "" ] && return 0
             sed -i "/zram or zsmalloc/d" "${2}"
@@ -164,10 +150,6 @@ function blob_fixup() {
         vendor/bin/qcc-vendor|vendor/bin/qms|vendor/bin/xtra-daemon|vendor/lib64/libqms_client.so|vendor/lib64/libqcc_sdk.so|vendor/lib64/libcne.so)
             [ "$2" = "" ] && return 0
             grep -q "libbinder_shim.so" "${2}" || "${PATCHELF}" --add-needed "libbinder_shim.so" "${2}"
-            ;;
-        system_ext/lib64/libwfdmmsrc_system.so)
-            [ "$2" = "" ] && return 0
-            grep -q "libgui_shim" "${2}" || "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
             ;;
         *)
             return 1
