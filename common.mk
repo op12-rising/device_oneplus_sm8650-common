@@ -517,8 +517,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepdetector.xml
 
 # Sensors (wake)
-$(call soong_config_set,oplus_sensors,uses_tap_sensor,true)
-$(call soong_config_set,oplus_sensors,uses_double_tap_sensor,true)
+# $(call soong_config_set,oplus_sensors,uses_tap_sensor,true)
+# $(call soong_config_set,oplus_sensors,uses_double_tap_sensor,true)
 
 # Shipping API
 BOARD_SHIPPING_API_LEVEL := 34
