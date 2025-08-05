@@ -83,7 +83,7 @@ vendor.audio.flac.sw.decoder.24bit=true
 vendor.audio.hal.boot.timeout.ms=20000
 vendor.audio.hal.output.suspend.supported=true
 vendor.audio.hdr.record.enable=false
-vendor.audio.offload.buffer.size.kb=32
+vendor.audio.offload.buffer.size.kb=256
 vendor.audio.offload.gapless.enabled=true
 vendor.audio.offload.multiaac.enable=true
 vendor.audio.offload.multiple.enabled=false
@@ -184,6 +184,7 @@ ro.camerax.extensions.enabled=true
 ro.hardware.camera=oemlayer
 cam.algo.ae_v1.enable=0
 cam.algo.ae_v2.enable=0
+persist.vendor.camera.maxRAWSizes=55
 vendor.camera.aux.packageexcludelist=org.telegram.messenger,org.thunderdog.challegram,us.zoom.videomeetings
 
 # Chipset
@@ -265,7 +266,8 @@ ro.surface_flinger.support_kernel_idle_timer=true
 
 # HWUI
 debug.hwui.use_hint_manager=true
-debug.hwui.target_cpu_time_percent=10
+debug.sf.enable_adpf_cpu_hint=true
+debug.hwui.target_cpu_time_percent=30
 
 # Incremental FS
 ro.incremental.enable=yes
